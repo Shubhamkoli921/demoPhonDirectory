@@ -1,0 +1,19 @@
+
+#banner-relative{
+    height: 600px;
+} 
+#imgw{
+    height: 600px;
+}
+#imgp{
+    height: 110px;
+}
+#imgc{
+    width: 390px;
+    height: 250px;
+}
+@media only screen and (max-width: 600px) {
+    #card{
+        width: 380px;
+    }
+  }
