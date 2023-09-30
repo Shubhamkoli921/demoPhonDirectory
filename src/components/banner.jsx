@@ -1,8 +1,12 @@
 import React from 'react'
 import '../assets/style.css'
+import Navbar from './navbar'
+import Rotary from './rotary'
 const Banner = () => {
     return (
         <>
+        <Navbar />
+        <Rotary/>
         <h1 className='text-4xl mx-auto flex font-bold max-w-[1640px] items-center p-2 ml-5'>Rotary Information</h1>
         <div className='max-w-[1640px] mx-auto p-4 grid md:grid-cols-2 gap-6'>
             {/* {card} */   }

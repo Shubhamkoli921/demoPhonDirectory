@@ -73,8 +73,8 @@ const Navbar = () => {
                         </button>
                         {open ? (
                             <ul>
-                                <li><Link to='/drawerbanner'>1. RI President Shekar Mehta's Message</Link></li>
-                                <li><Link to='/drawerbanner'>2. RI District Governor Anil Parmar's Message</Link></li>
+                                <li className='text-gray-500'><Link to='/banner'>1. RI President Shekar Mehta's Message</Link></li>
+                                <li className='text-gray-500'><Link to='/drawerbanner'>2. RI District Governor Anil Parmar's Message</Link></li>
                             </ul>
                         ) : null}
                         <button onClick={handleopen1} className='text-xl py-4 flex'>
@@ -82,8 +82,8 @@ const Navbar = () => {
                         </button>
                         {open1 ? (
                             <ul>
-                                <li><Link to='/drawerbanner'>1. Governor's Official club visit  </Link></li>
-                                <li><Link to='/drawerbanner'>2. District Events 2022-2023</Link></li>
+                                <li className='text-gray-500'><Link to='/drawerbanner'>1. Governor's Official club visit  </Link></li>
+                                <li className='text-gray-500'><Link to='/drawerbanner'>2. District Events 2022-2023</Link></li>
                             </ul>
                         ) : null}
                         <button onClick={handleopen2} className='text-xl py-4 flex'>
@@ -91,7 +91,7 @@ const Navbar = () => {
                         </button>
                         {open2 ? (
                             <ul>
-                                <li><Link to='/card'>College of governor and district first ladies</Link></li>
+                                <li className='text-gray-500'><Link to='/card'>College of governor and district first ladies</Link></li>
                             </ul>
                         ) : null}
                         <button onClick={handleopen3} className='text-xl py-4 flex'>
@@ -99,8 +99,8 @@ const Navbar = () => {
                         </button>
                         {open3 ? (
                             <ul>
-                                <li><Link to='/drawerbanner'>1. District Core Committee</Link></li>
-                                <li><Link to='/drawerbanner'>2. Finance Committee</Link></li>
+                                <li className='text-gray-500'><Link to='/drawerbanner'>1. District Core Committee</Link></li>
+                                <li className='text-gray-500'><Link to='/drawerbanner'>2. Finance Committee</Link></li>
                             </ul>
                         ) : null}
                         <button onClick={handleopen4} className='text-xl py-4 flex'>
@@ -108,8 +108,8 @@ const Navbar = () => {
                         </button>
                         {open4 ? (
                             <ul>
-                                <li><Link to='/drawerbanner'>1. Club Administration Committee</Link></li>
-                                <li><Link to='/drawerbanner'>2. Strategic Planning Committee</Link></li>
+                                <li className='text-gray-500'><Link to='/drawerbanner'>1. Club Administration Committee</Link></li>
+                                <li className='text-gray-500'><Link to='/drawerbanner'>2. Strategic Planning Committee</Link></li>
                             </ul>
                         ) : null}
                         <button onClick={handleopen5} className='text-xl py-4 flex'>
@@ -117,8 +117,8 @@ const Navbar = () => {
                         </button>
                         {open5 ? (
                             <ul>
-                                <li><Link to='/drawerbanner'>1. Membership Committees</Link></li>
-                                <li><Link to='/drawerbanner'>2. Alumini Committee</Link></li>
+                                <li className='text-gray-500'><Link to='/drawerbanner'>1. Membership Committees</Link></li>
+                                <li className='text-gray-500'><Link to='/drawerbanner'>2. Alumini Committee</Link></li>
                             </ul>
                         ) : null}
                         <button onClick={handleopen6} className='text-xl py-4 flex'>
@@ -126,8 +126,8 @@ const Navbar = () => {
                         </button>
                         {open6 ? (
                             <ul>
-                                <li><Link to='/drawerbanner'>1. Foundation Promotion Committees </Link></li>
-                                <li><Link to='/drawerbanner'>2. Global Grants & Stewardship Committee</Link></li>
+                                <li className='text-gray-500'><Link to='/drawerbanner'>1. Foundation Promotion Committees </Link></li>
+                                <li className='text-gray-500'><Link to='/drawerbanner'>2. Global Grants & Stewardship Committee</Link></li>
                             </ul>
                         ) : null}
 

@@ -7,6 +7,7 @@ import Login from './components/login';
 import Signup from './components/Signup';
 import Cards from './components/card';
 import DrawerBanner from './components/drawerbanner';
+import Banner from './components/banner';
 // import Test from './components/test';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path='/login' element = {<Login />} />
         <Route path='/signin' element={<Signup />} />
         <Route path='/drawerbanner' element={<DrawerBanner/>} />
+        <Route path='/banner' element={<Banner />} />
         {/* <Route path='/carousel' element={<Test/>} /> */}
       </Routes>
     </BrowserRouter>
