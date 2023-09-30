@@ -9,10 +9,30 @@ const Navbar = () => {
 
     const [nav, setnav] = useState(false)
     const [open, isopen] = useState(false)
-    const [open1,setopen1]= useState(false)
+    const [open1, setopen1] = useState(false)
+    const [open2, setopen2] = useState(false)
+    const [open3, setopen3] = useState(false)
+    const [open4, setopen4] = useState(false)
+    const [open5, setopen5] = useState(false)
+    const [open6, setopen6] = useState(false)
 
-    const handleopen1 = ()=>{
+    const handleopen1 = () => {
         setopen1(!open1)
+    }
+    const handleopen2 = () => {
+        setopen2(!open2)
+    }
+    const handleopen3 = () => {
+        setopen3(!open3)
+    }
+    const handleopen4 = () => {
+        setopen4(!open4)
+    }
+    const handleopen5 = () => {
+        setopen5(!open5)
+    }
+    const handleopen6 = ()=>{
+        setopen6(!open6)
     }
     const handleOpen = () => {
 
@@ -46,7 +66,7 @@ const Navbar = () => {
             <div className={nav ? 'fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-300' : 'fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-300'}>
                 <AiOutlineClose size={30} className='absolute right-4 top-4 cursor-pointer' onClick={() => setnav(!nav)} />
                 <h2 className='text-2xl p-4 font-bold   '>Rotary <span className='font-bold text-blue-600'>2020-2023</span></h2>
-                <nav>
+                <nav className='h-full'>
                     <ul className='flex flex-col p-4 text-gray-800'>
                         <button onClick={handleOpen} className='text-xl py-4 flex'>
                             Messages
@@ -57,27 +77,59 @@ const Navbar = () => {
                                 <li><Link to='/drawerbanner'>2. RI District Governor Anil Parmar's Message</Link></li>
                             </ul>
                         ) : null}
-                       <button onClick={handleopen1} className='text-xl py-4 flex'>
+                        <button onClick={handleopen1} className='text-xl py-4 flex'>
                             Rotary information
                         </button>
                         {open1 ? (
                             <ul>
-                                <li><Link to='/drawerbanner'>1. RI President Shekar Mehta's Message</Link></li>
-                                <li><Link to='/drawerbanner'>2. RI District Governor Anil Parmar's Message</Link></li>
+                                <li><Link to='/drawerbanner'>1. Governor's Official club visit  </Link></li>
+                                <li><Link to='/drawerbanner'>2. District Events 2022-2023</Link></li>
                             </ul>
                         ) : null}
-                        <button  className='text-xl py-4 flex'>
-                            <Link to={'/card'}>Fond Memories</Link>
+                        <button onClick={handleopen2} className='text-xl py-4 flex'>
+                            Fond Memories
                         </button>
-                        <button  className='text-xl py-4 flex'>
-                            District committees
+                        {open2 ? (
+                            <ul>
+                                <li><Link to='/card'>College of governor and district first ladies</Link></li>
+                            </ul>
+                        ) : null}
+                        <button onClick={handleopen3} className='text-xl py-4 flex'>
+                            District Committees
                         </button>
-                        <button  className='text-xl py-4 flex'>
+                        {open3 ? (
+                            <ul>
+                                <li><Link to='/drawerbanner'>1. District Core Committee</Link></li>
+                                <li><Link to='/drawerbanner'>2. Finance Committee</Link></li>
+                            </ul>
+                        ) : null}
+                        <button onClick={handleopen4} className='text-xl py-4 flex'>
                             Administration Committees
                         </button>
-                        <button  className='text-xl py-4 flex'>
+                        {open4 ? (
+                            <ul>
+                                <li><Link to='/drawerbanner'>1. Club Administration Committee</Link></li>
+                                <li><Link to='/drawerbanner'>2. Strategic Planning Committee</Link></li>
+                            </ul>
+                        ) : null}
+                        <button onClick={handleopen5} className='text-xl py-4 flex'>
                             Membership Committees
                         </button>
+                        {open5 ? (
+                            <ul>
+                                <li><Link to='/drawerbanner'>1. Membership Committees</Link></li>
+                                <li><Link to='/drawerbanner'>2. Alumini Committee</Link></li>
+                            </ul>
+                        ) : null}
+                        <button onClick={handleopen6} className='text-xl py-4 flex'>
+                            Rotary Foundation
+                        </button>
+                        {open6 ? (
+                            <ul>
+                                <li><Link to='/drawerbanner'>1. Foundation Promotion Committees </Link></li>
+                                <li><Link to='/drawerbanner'>2. Global Grants & Stewardship Committee</Link></li>
+                            </ul>
+                        ) : null}
 
                     </ul>
                 </nav>
