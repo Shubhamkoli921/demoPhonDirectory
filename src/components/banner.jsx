@@ -6,9 +6,9 @@ const Banner = () => {
         <h1 className='text-4xl mx-auto flex font-bold max-w-[1640px] items-center p-2 ml-5'>Rotary Information</h1>
         <div className='max-w-[1640px] mx-auto p-4 grid md:grid-cols-2 gap-6'>
             {/* {card} */   }
-            <div className='rounded-xl relative lg:max-h-[500px] md:max-h-[600px]' id='banner-relative'>
+            <div className='rounded-xl relative w-full h-full' id='banner-relative'>
                 {/* {overlay} */}
-                <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
+                <div className='absolute lg:max-h-[500px] md:max-h-[600px] bg-black/50 rounded-xl text-white p-2'>
                 <div className='grid md:grid-cols-2 gap-2'>
                     <div></div>
                     <div className='flex mx-auto w-full justify-end items-center p-2'>
@@ -26,9 +26,9 @@ const Banner = () => {
                 </div>
                 {/* <img id='imgw' className='lg:max-h-[500px] md:max-h-[560px] w-full object-cover rounded-xl' src='https://www.vhv.rs/dpng/d/427-4270980_geometric-background-png-background-geometric-design-png-transparent.png' alt='/'/> */}
             </div>
-            <div className='rounded-xl relative lg:max-h-[500px] md:max-h-[600px]' id='banner-relative'>
+            <div className='rounded-xl relative w-full h-full' id='banner-relative'>
                 {/* {overlay} */}
-                <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
+                <div className='absolute lg:max-h-[500px] md:max-h-[600px] bg-black/50 rounded-xl text-white p-2'>
                 <div className='grid md:grid-cols-2 gap-2'>
                     <div></div>
                     <div className='flex mx-auto w-full justify-end items-center p-2'>
