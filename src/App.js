@@ -10,6 +10,7 @@ import DrawerBanner from './components/drawerbanner';
 import Banner from './components/banner';
 import Club from './components/club';
 import Events from './components/events';
+import Committee from './components/committee';
 // import Test from './components/test';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path='/banner' element={<Banner />} />
         <Route path='/club' element={<Club/>} />
         <Route path='/events' element={<Events/>} />
+        <Route path='/committee' element={<Committee />} />
         
       </Routes>
     </BrowserRouter>

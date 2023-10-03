@@ -1,16 +1,18 @@
-
 import React from 'react'
 import { BsFillPersonFill } from 'react-icons/bs'
 import { CgOrganisation } from 'react-icons/cg'
 import { BiSolidNetworkChart } from 'react-icons/bi'
 import { LiaBirthdayCakeSolid } from 'react-icons/lia'
 import { AiFillPhone, AiOutlineMail } from 'react-icons/ai'
-
-
-const CardComponent = () => {
+import Navbar from './navbar'
+import Rotary from './rotary'
+import Footer from './footer'
+const Committee = () => {
   return (
     <>
-      <div className='max-w-[1400px] mx-auto items-center w-full h-full p-2'>
+        <Navbar />
+        <Rotary />
+        <div className='max-w-[1400px] mx-auto items-center w-full h-full p-2'>
         {/* {card} */}
         <div className='rounded-xl relative p-2' id='imgc'>
           {/* {overlay} */}
@@ -36,9 +38,9 @@ const CardComponent = () => {
           {/* <img className='max-h-[200px] md:max-h-[200px] w-full object-cover rounded-xl' src='https://images.pexels.com/photos/2133989/pexels-photo-2133989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='/' /> */}
         </div>
       </div>
+      <Footer/>
     </>
-
   )
 }
 
-export default CardComponent
+export default Committee

@@ -99,8 +99,8 @@ const Navbar = () => {
                         </button>
                         {open3 ? (
                             <ul>
-                                <li className='text-gray-500'><Link to='/drawerbanner'>1. District Core Committee</Link></li>
-                                <li className='text-gray-500'><Link to='/drawerbanner'>2. Finance Committee</Link></li>
+                                <li className='text-gray-500'><Link to='/committee'>1. District Core Committee</Link></li>
+                                <li className='text-gray-500'><Link to='/committee'>2. Finance Committee</Link></li>
                             </ul>
                         ) : null}
                         <button onClick={handleopen4} className='text-xl py-4 flex'>
@@ -108,8 +108,8 @@ const Navbar = () => {
                         </button>
                         {open4 ? (
                             <ul>
-                                <li className='text-gray-500'><Link to='/drawerbanner'>1. Club Administration Committee</Link></li>
-                                <li className='text-gray-500'><Link to='/drawerbanner'>2. Strategic Planning Committee</Link></li>
+                                <li className='text-gray-500'><Link to='/committee'>1. Club Administration Committee</Link></li>
+                                <li className='text-gray-500'><Link to='/committee'>2. Strategic Planning Committee</Link></li>
                             </ul>
                         ) : null}
                         <button onClick={handleopen5} className='text-xl py-4 flex'>
@@ -117,8 +117,8 @@ const Navbar = () => {
                         </button>
                         {open5 ? (
                             <ul>
-                                <li className='text-gray-500'><Link to='/drawerbanner'>1. Membership Committees</Link></li>
-                                <li className='text-gray-500'><Link to='/drawerbanner'>2. Alumini Committee</Link></li>
+                                <li className='text-gray-500'><Link to='/committee'>1. Membership Committees</Link></li>
+                                <li className='text-gray-500'><Link to='/committee'>2. Alumini Committee</Link></li>
                             </ul>
                         ) : null}
                         <button onClick={handleopen6} className='text-xl py-4 flex'>
@@ -126,8 +126,8 @@ const Navbar = () => {
                         </button>
                         {open6 ? (
                             <ul>
-                                <li className='text-gray-500'><Link to='/drawerbanner'>1. Foundation Promotion Committees </Link></li>
-                                <li className='text-gray-500'><Link to='/drawerbanner'>2. Global Grants & Stewardship Committee</Link></li>
+                                <li className='text-gray-500'><Link to='/committee'>1. Foundation Promotion Committees </Link></li>
+                                <li className='text-gray-500'><Link to='/committee'>2. Global Grants & Stewardship Committee</Link></li>
                             </ul>
                         ) : null}
 

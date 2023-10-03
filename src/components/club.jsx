@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './navbar'
 import Rotary from './rotary'
 import Footer from './footer'
-import { Checkbox } from '@material-tailwind/react'
+
 
 const Club = () => {
     return (
