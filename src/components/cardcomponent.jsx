@@ -10,7 +10,7 @@ import { AiFillPhone, AiOutlineMail } from 'react-icons/ai'
 const CardComponent = () => {
   return (
     <>
-      <div className='max-w-[1640px] mx-auto p-4'>
+      <div className='max-w-[1400px] mx-auto items-center w-full h-full p-2'>
         {/* {card} */}
         <div className='rounded-xl relative p-2' id='imgc'>
           {/* {overlay} */}

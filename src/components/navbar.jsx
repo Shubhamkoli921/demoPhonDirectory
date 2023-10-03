@@ -82,8 +82,8 @@ const Navbar = () => {
                         </button>
                         {open1 ? (
                             <ul>
-                                <li className='text-gray-500'><Link to='/drawerbanner'>1. Governor's Official club visit  </Link></li>
-                                <li className='text-gray-500'><Link to='/drawerbanner'>2. District Events 2022-2023</Link></li>
+                                <li className='text-gray-500'><Link to='/club'>1. Governor's Official club visit  </Link></li>
+                                <li className='text-gray-500'><Link to='/events'>2. District Events 2022-2023</Link></li>
                             </ul>
                         ) : null}
                         <button onClick={handleopen2} className='text-xl py-4 flex'>

@@ -8,6 +8,8 @@ import Signup from './components/Signup';
 import Cards from './components/card';
 import DrawerBanner from './components/drawerbanner';
 import Banner from './components/banner';
+import Club from './components/club';
+import Events from './components/events';
 // import Test from './components/test';
 
 function App() {
@@ -22,7 +24,9 @@ function App() {
         <Route path='/signin' element={<Signup />} />
         <Route path='/drawerbanner' element={<DrawerBanner/>} />
         <Route path='/banner' element={<Banner />} />
-        {/* <Route path='/carousel' element={<Test/>} /> */}
+        <Route path='/club' element={<Club/>} />
+        <Route path='/events' element={<Events/>} />
+        
       </Routes>
     </BrowserRouter>
     </>

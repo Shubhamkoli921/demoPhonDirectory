@@ -14,7 +14,7 @@ const Cards = () => {
         <>
             <Navbar />
             <Rotary />
-            <div className='max-w-[1400px] mx-auto p-1 flex'>
+            <div className='max-w-[1400px] mx-auto items-center w-full h-full p-2'>
                 <div className='grid grid-cols-1 md:grid-cols-3 '>
                     <CardComponent />
                     <CardComponent />

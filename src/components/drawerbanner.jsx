@@ -2,13 +2,14 @@ import React from 'react'
 import Footer from './footer'
 import Rotary from './rotary'
 import Navbar from './navbar'
+import anilparmar from '../assets/anilparmar.jpeg'
 
 const DrawerBanner = () => {
     return (
         <>  
             <Navbar/>
             <Rotary />
-            <h1 className='text-4xl mx-auto flex font-bold max-w-[1640px]  items-center p-2 ml-5'>Rotary Information</h1>
+            <h1 className='text-4xl mx-auto flex font-bold max-w-[1640px]  items-center p-2 ml-5 text-blue-950'>RI Ditrict Governor Anil Parmar's Message</h1>
             <div className='max-w-[1640px] mx-auto p-4 items-center w-full h-full '>
                 {/* {card} */}
                 <div className='rounded-xl relative lg:max-h-[500px] md:max-h-[600px]' id='banner-relative'>
@@ -17,7 +18,7 @@ const DrawerBanner = () => {
                         <div className='grid md:grid-cols-2 gap-2'>
                             <div></div>
                             <div className='flex mx-auto w-full justify-end items-center p-2'>
-                                <img className="max-h-[300px] lg:max-h-[120px] sm:max-h-[120px] w-[100px] object-cover rounded-xl" src='https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=600' alt='img' id='imgp' />
+                                <img className="max-h-[300px] lg:max-h-[120px] sm:max-h-[120px] w-[100px] object-cover rounded-xl" src={anilparmar} alt='img' id='imgp' />
                             </div>
                         </div>
                         <p className='font-bold text-2xl px-2 pt-4'>Dear Fello Rotarians</p>
