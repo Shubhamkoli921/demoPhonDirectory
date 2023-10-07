@@ -1,15 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../assets/style.css'
 import Navbar from './navbar'
 import Rotary from './rotary'
 import Footer from './footer'
 import shekarmehta from '../assets/shekarmehta.jpeg'
+
 const Banner = () => {
+
+    const [rotary,setrotary] = useState([])
+    useEffect(()=>{
+        fetch('https://rslsolution.com/Rotary_directory/api/getMenuList')
+        .then((resp)=>{
+            setrotary(resp.data)
+            console.log(resp)
+        })
+        
+    })
+
     return (
         <>
         <Navbar />
         <Rotary/>
-        <h1 className='text-4xl mx-auto flex font-bold max-w-[1640px]  items-center p-2 ml-5 text-blue-950'>RI President Shekar Mehta's Message</h1>
+        <h1 className='text-4xl mx-auto flex font-bold max-w-[1640px]  items-center p-2 ml-5 text-blue-950'>{rotary.data.subMenu.title}</h1>
             <div className='max-w-[1640px] mx-auto p-4 items-center w-full h-full '>
                 {/* {card} */}
                 <div className='rounded-xl relative lg:max-h-[500px] md:max-h-[600px]' id='banner-relative'>

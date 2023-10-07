@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "ca4db403-da22-4a64-8d79-6fb2c28b5072",
+		"name": "rotary_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20328782"
+	},
+	"item": [
+		{
+			"name": "https://rslsolution.com/Rotary_directory/api/getMenuList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://rslsolution.com/Rotary_directory/api/getMenuList",
+					"protocol": "https",
+					"host": [
+						"rslsolution",
+						"com"
+					],
+					"path": [
+						"Rotary_directory",
+						"api",
+						"getMenuList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://rslsolution.com/Rotary_directory/api/getSubMenuDetail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sub_menu_id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://rslsolution.com/Rotary_directory/api/getSubMenuDetail",
+					"protocol": "https",
+					"host": [
+						"rslsolution",
+						"com"
+					],
+					"path": [
+						"Rotary_directory",
+						"api",
+						"getSubMenuDetail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

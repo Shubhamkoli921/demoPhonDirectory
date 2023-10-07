@@ -1,9 +1,13 @@
-import React from 'react'
+// import React, { useEffect, useState } from 'react'
 import AnilParmar from '../assets/anilparmar.jpeg'
 import shekarMehta from '../assets/shekarmehta.jpeg'
 import '../assets/style.css'
+// import axios from 'axios'
 
 const Landing = () => {
+
+   
+
     return (
         <>
             <div className='max-w-[1640px] mx-auto p-4'>
