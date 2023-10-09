@@ -12,7 +12,7 @@ const Navbar = () => {
     const [nav, setnav] = useState(false)
     const [open, isopen] = useState(false)
 
-
+    // const props =  
 
 
     const handleOpen = () => {
@@ -106,8 +106,8 @@ const Navbar = () => {
                                                 {console.log("in nested map ", type.id)}
 
                                                 {/* {open ? ( */}
-                                                    <ul key={type.id}>
-                                                        <li className='text-gray-500 text-[14px]'><Link to={type.id}>{type.title}</Link></li>
+                                                    <ul key={type.id} props={type.id}>
+                                                        <li className='text-gray-500 text-[14px]'><Link to={`/${type.id}`}>{type.title}</Link></li>
                                                     </ul>
                                                 {/* ) : null} */}
                                             </>

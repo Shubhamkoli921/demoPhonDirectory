@@ -1,20 +1,62 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from './footer'
 import Rotary from './rotary'
 import Navbar from './navbar'
 import anilparmar from '../assets/anilparmar.jpeg'
+// import axios from 'axios'
+// import { useFetcher } from 'react-router-dom'
 
-const DrawerBanner = () => {
+
+const DrawerBanner = ({ id }) => {
+
+    const [data,setData] = useState([])
+    useEffect(() => {
+        ShowPending();
+    }, [])
+
+
+    const ShowPending = async () => {
+        let FormData ={
+            formdata: [
+                {
+                    key: "sub_menu_id",
+                    value: "6",
+                    type: "text"
+                }
+            ]
+            // key:'sub_menu_id',
+            // value:"6",
+            // type:"text"
+            
+        }
+        console.log("formdata values ",FormData)
+        await fetch('https://rslsolution.com/Rotary_directory/admin/api/getSubMenuDetail', {
+            method: 'POST',
+            headers: {
+                Accept: 'Application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(FormData),
+        })
+            .then(res => res.json())
+            .then(resData => {
+                console.log('resData______data>>>>>>>>>>>>>>>>>>>>>>>>>>>>>', resData);
+                setData(resData.data);
+            })
+            .catch(error => console.log('error', error));
+    };
     return (
-        <>  
-            <Navbar/>
+        <>
+            <Navbar />
             <Rotary />
-            <h1 className='text-4xl mx-auto flex font-bold max-w-[1640px]  items-center p-2 ml-5 text-blue-950'>RI Ditrict Governor Anil Parmar's Message</h1>
+            <h1 className='text-4xl mx-auto flex font-bold max-w-[1640px]  items-center p-2 ml-5 text-blue-950'>Id : {console.log("drawwerbanner", id)}{id}</h1>
+            {/* {console.log("drawwer api test ", data)} */}
+            {console.log("show me ",data)}
             <div className='max-w-[1640px] mx-auto p-4 items-center w-full h-full '>
                 {/* {card} */}
                 <div className='rounded-xl relative lg:max-h-[500px] md:max-h-[600px]' id='banner-relative'>
                     {/* {overlay} */}
-                    <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
+                    <div  className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
                         <div className='grid md:grid-cols-2 gap-2'>
                             <div></div>
                             <div className='flex mx-auto w-full justify-end items-center p-2'>
@@ -33,7 +75,7 @@ const DrawerBanner = () => {
                     {/* <img id='imgw' className='lg:max-h-[500px] md:max-h-[560px] w-full object-cover rounded-xl' src='https://www.vhv.rs/dpng/d/427-4270980_geometric-background-png-background-geometric-design-png-transparent.png' alt='/'/> */}
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }

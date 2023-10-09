@@ -9,7 +9,7 @@ import Footer from './footer'
 const Home = () => {
   return (
     <>
-    <Navbar />
+    <Navbar/>
     <Rotary />
     <Landing />
     {/* <Banner /> */}

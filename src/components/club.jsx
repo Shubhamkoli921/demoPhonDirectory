@@ -4,13 +4,13 @@ import Rotary from './rotary'
 import Footer from './footer'
 
 
-const Club = () => {
+const Club = ({id}) => {
     return (
         <>
             <Navbar />
             <Rotary />
             <div >
-                <h1 className='text-4xl mx-auto flex font-bold max-w-[1640px]  items-center p-2 ml-5 text-blue-950'>Governor's Official Club Visit 2022-2023</h1>
+                <h1 className='text-4xl mx-auto flex font-bold max-w-[1640px]  items-center p-2 ml-5 text-blue-950'>Governor's Official Club Visit 2022-2023 {id}</h1>
                 <div className='max-w-[1640px] mx-auto p-4 items-center w-full h-full'>
                     <div className='w-full h-full bg-black/50 rounded-xl text-white   p-5'>
                         <div>
