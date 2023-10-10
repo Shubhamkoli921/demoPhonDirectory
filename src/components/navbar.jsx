@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import {BsFillPersonFill} from 'react-icons/bs'
 
 import { Link } from 'react-router-dom'
 
@@ -8,6 +9,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
 
     const [nav, setnav] = useState(false)
+    const [nav1, setnav1] = useState(false)
     const [open, isopen] = useState(false)
     const [open1, setopen1] = useState(false)
     const [open2, setopen2] = useState(false)
@@ -31,7 +33,7 @@ const Navbar = () => {
     const handleopen5 = () => {
         setopen5(!open5)
     }
-    const handleopen6 = ()=>{
+    const handleopen6 = () => {
         setopen6(!open6)
     }
     const handleOpen = () => {
@@ -46,13 +48,8 @@ const Navbar = () => {
                 <div onClick={() => setnav(!nav)} className='cursor-pointer'>
                     <AiOutlineMenu size={30} />
                 </div>
-
-
             </div>
-            <div className='bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]'>
-                <AiOutlineSearch size={20} />
-                <input type='text' placeholder='Search' className='bg-transparent p-2 focus:outline-none' />
-            </div>
+           
             <div className='flex justify-between'>
                 <Link className=' text-black bg-transparent hidden md:flex items-center p-2 m-2  rounded hover:text-white hover:bg-black cursor-pointer duration-500' to={"/login"} >
                     Login
@@ -61,7 +58,7 @@ const Navbar = () => {
 
 
             </div>
-            {nav ? <div className='bg-black/80 fixed -full h-screen z-10 top-0 left-0'></div> : ''}
+            {nav ? <div className='bg-black/80 fixed w-full h-screen z-10 top-0 left-0'></div> : ''}
             {/* {Side drawer menu} */}
             <div className={nav ? 'fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-300' : 'fixed top-0 left-[-100%] w-[300px] h-screen bg-white z-10 duration-300'}>
                 <AiOutlineClose size={30} className='absolute right-4 top-4 cursor-pointer' onClick={() => setnav(!nav)} />
@@ -130,6 +127,26 @@ const Navbar = () => {
                                 <li className='text-gray-500'><Link to='/committee'>2. Global Grants & Stewardship Committee</Link></li>
                             </ul>
                         ) : null}
+
+                    </ul>
+                </nav>
+            </div>
+            <BsFillPersonFill size={30} onClick={()=>setnav1(!nav1)} className='cursor-pointer lg:hidden md:hidden' />
+            {nav1 ? <div className='bg-black/80 fixed w-full h-screen z-10 top-0 right-0'></div> : ''}
+            {/* {Side drawer menu} */}
+            <div className={nav1 ? 'fixed top-0 right-0 w-[300px] h-screen bg-white z-10 duration-300' : 'fixed top-0 right-[-100%] w-[300px] h-screen bg-white z-10 duration-300'}>
+                <AiOutlineClose size={30} className='absolute right-4 top-4 cursor-pointer' onClick={() => setnav1(!nav1)} />
+                {/* <h2 className='text-2xl p-4 font-bold   '>Rotary <span className='font-bold text-blue-600'>2020-2023</span></h2> */}
+                <nav className='h-full'>
+                    <ul className='flex flex-col p-4 text-gray-800'>
+                        <button className='text-xl py-4 flex cursor-pointer'>
+                            <Link to={'/login'}>Login</Link>
+                        </button>
+                        <button className='text-xl py-4 flex cursor-pointer'>
+                        <Link to={'/signup'}>SignUp</Link>
+                        </button>
+
+
 
                     </ul>
                 </nav>
