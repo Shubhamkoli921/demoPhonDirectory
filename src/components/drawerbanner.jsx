@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 import Footer from './footer'
 import Rotary from './rotary'
 import Navbar from './navbar'
@@ -7,56 +7,21 @@ import anilparmar from '../assets/anilparmar.jpeg'
 // import { useFetcher } from 'react-router-dom'
 
 
-const DrawerBanner = ({ id }) => {
-
-    const [data,setData] = useState([])
-    useEffect(() => {
-        ShowPending();
-    }, [])
+const DrawerBanner = () => {
 
 
-    const ShowPending = async () => {
-        let FormData ={
-            formdata: [
-                {
-                    key: "sub_menu_id",
-                    value: "6",
-                    type: "text"
-                }
-            ]
-            // key:'sub_menu_id',
-            // value:"6",
-            // type:"text"
-            
-        }
-        console.log("formdata values ",FormData)
-        await fetch('https://rslsolution.com/Rotary_directory/admin/api/getSubMenuDetail', {
-            method: 'POST',
-            headers: {
-                Accept: 'Application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(FormData),
-        })
-            .then(res => res.json())
-            .then(resData => {
-                console.log('resData______data>>>>>>>>>>>>>>>>>>>>>>>>>>>>>', resData);
-                setData(resData.data);
-            })
-            .catch(error => console.log('error', error));
-    };
     return (
         <>
             <Navbar />
             <Rotary />
-            <h1 className='text-4xl mx-auto flex font-bold max-w-[1640px]  items-center p-2 ml-5 text-blue-950'>Id : {console.log("drawwerbanner", id)}{id}</h1>
-            {/* {console.log("drawwer api test ", data)} */}
-            {console.log("show me ",data)}
+            <h1 className='text-4xl mx-auto flex font-bold max-w-[1640px]  items-center p-2 ml-5 text-blue-950'>
+                {/* {rotary.data.subMenu.title} */}
+            </h1>
             <div className='max-w-[1640px] mx-auto p-4 items-center w-full h-full '>
                 {/* {card} */}
-                <div className='rounded-xl relative lg:max-h-[500px] md:max-h-[600px]' id='banner-relative'>
+                <div className='rounded-xl' id='banner-relative'>
                     {/* {overlay} */}
-                    <div  className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
+                    <div className=' w-full h-full bg-black/50 rounded-xl text-white p-2'>
                         <div className='grid md:grid-cols-2 gap-2'>
                             <div></div>
                             <div className='flex mx-auto w-full justify-end items-center p-2'>
@@ -65,7 +30,42 @@ const DrawerBanner = ({ id }) => {
                         </div>
                         <p className='font-bold text-2xl px-2 pt-4'>Dear Fello Rotarians</p>
                         <br />
-                        <p className='px-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est doloribus inventore ducimus nobis obcaecati assumenda qui nostrum neque, minima vitae optio impedit rem! Beatae fuga doloribus, quam ab consequatur distinctio.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. In temporibus soluta vel quam eius laudantium nihil, nesciunt alias, minus, sint eaque dignissimos perferendis accusantium. Inventore, error. Autem iste laboriosam incidunt.</p>
+                        <p className='px-2'>It gives me immense pleasure to communicate with you in
+                            these challenging times of unprecedented Crisis due to COVID-
+                            19.
+                            At the Outset my Congratulations to DG Pankaj and First Lady
+                            Priya on being installed as the 14th District Governor and First
+                            Lady of RID 3131.
+                            Friends, current membership trends are a challenge for RID
+                            3131 and membership development and retention should be
+                            our highest priority.
+                            Our district has a very strong history of TRF Giving and I appeal
+                            to all Rotarians to contribute atleast 100 USD to APF every
+                            year(EREY) and more possible to continue and increase the
+                            quantum of service to community through The Rotary
+                            Foundation, DG Pankaj and First Lady Priya have taken the lead
+                            and I congratulate them both for the generosity and strong
+                            desire to help the community at large.
+                            DG myself and DGN Manjoo are strong proponents of Strategic
+                            Planning at District as well as club level and would request all
+                            Rotarians to actively participate in Strategic Planning and come
+                            up with action plans and roadmap for respective clubs.
+                            DG Pankaj and his Team has been working with zeal in these
+                            challenging times and all clubs and Presidents are energised
+                            with the motivational and well planned training events
+                            arranged virtually by DG Pankaj and his team. All the training
+                            events have been virtual and well attended and DG
+                            Pankaj/District Trainer PDG Dr. Shailesh and Team 21/22 have
+                            given very motivating and Informative training with use of
+                            technology never done before in our District. I have also got
+                            opportunities to interact with you all and I am amazed by the
+                            level of enthusiasm you all are carrying.
+                            Hema and myself take this opportunity to wish DG Pankaj. First
+                            Lady Priya and whole team a great Rotary Year 21/22 and I am
+                            sure RID 3131 will achieve greater heights and rock in RY 21/22
+                            with active support of all Rotarians of RID 3131.1 take
+                            opportunity to thank all Rotarians of RID 3131 for the love and
+                            affection showered on me over the years.</p>
                         <br />
                         <p className='px-2'>Kind Regards,</p>
                         <br />

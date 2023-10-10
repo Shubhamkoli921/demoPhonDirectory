@@ -28,6 +28,7 @@ const Club = ({id}) => {
                             <p>7. Highlights and concise reports of club's current status and strategic planning.</p>
                             <p>8. Club's Committee plans Goals and objectives, plans and action taken in the year.</p>
                             <p>9. Assets of club.</p>
+                            
                         </div>
                         <br/>
                         <h1>Only in Soft format</h1>

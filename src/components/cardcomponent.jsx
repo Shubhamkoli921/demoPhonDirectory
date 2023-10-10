@@ -12,17 +12,17 @@ const CardComponent = () => {
     <>
       <div className='max-w-[1400px] mx-auto items-center w-full h-full p-2'>
         {/* {card} */}
-        <div className='rounded-xl relative p-2' id='imgc'>
+        <div className='rounded-xl p-2'>
           {/* {overlay} */}
-
-          <div className='absolute lg:w-[400px] lg:h-[200px] md:w-[390px]   bg-black/50 rounded-xl text-white flex flex-row' id='card'>
-            <div className='w-full h-full justify-center flex items-center'>
-              <img className="max-h-[200px] lg:max-h-[200px] md:max-h-[100px] w-[160px] object-cover rounded-xl p-1" src='https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=600' alt='img' />
+          
+          <div className='bg-black/50 rounded-xl text-white flex flex-row'>
+            <div className='max-h-[200px] lg:max-h-[200px] md:max-h-[100px] w-[160px] justify-center flex items-center'>
+              <img className="w-full h-full object-cover rounded-xl p-1" src='https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=600' alt='img' />
             </div>
             <div className='flex flex-col items-center justify-center w-full h-full '>
               {/* <div className='absolute w-[200px] h-[200px] bg-gradient-to-tl from-black '></div> */}
               <h1 className='m-2 font-bold'>Member</h1>
-              <div className='flex-col p-2'>
+              <div className='flex-col p-2 text-[12px] w-[200px] lg:text-[15px] lg:w-[300px]'>
                 <p className='flex flex-row items-center'><BsFillPersonFill className="mx-2" />shubham Koli</p>
                 <p className='flex flex-row items-center'><CgOrganisation className="mx-2" /> company Name</p>
                 <p className='flex flex-row items-center'><BiSolidNetworkChart className="mx-2" />  Occupation</p>

@@ -1,5 +1,5 @@
 #banner-relative{
-    height: 600px;
+    /* height: 600px; */
 } 
 #imgw{
     height: 600px;
@@ -7,13 +7,13 @@
 #imgp{
     height: 110px;
 }
-#imgc{
+/* #imgc{
     width: 390px;
     height: 250px;
-}
+} */
 @media only screen and (max-width: 600px) {
     #card{
-        width: 380px;
+        /* width: 380px; */
     }
     #landingdiv{
         height: 450px;
