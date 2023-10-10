@@ -4,15 +4,17 @@ import {MdKeyboardBackspace} from 'react-icons/md'
 const Signup = () => {
 
     const [fname, setfname] = useState('')
-    const [lname, setlname] = useState('')
+    const [Cname, setCname] = useState('')
     const [email, setemail] = useState('')
-    const [password, setpassword] = useState('')
+    const [date,setDate]=useState('')
+
+    const [occupation, setOccupation] = useState('')
     const [phone, setphone] = useState('')
     const navigate = useNavigate()
 
     const handlesubmit =(e)=>{
         e.preventDefault()
-        console.log(fname,lname,email,password,phone)
+        console.log(fname,Cname,occupation,date,phone,email)
     }
 
     return (
@@ -25,32 +27,42 @@ const Signup = () => {
                             onChange={(e) => setfname(e.target.value)}
                             className='w-full text-lg  py-2 px-3 outline-none'
                             type='text'
-                            placeholder='First Name'
+                            placeholder='Enter Your Full Name'
                         />
                         <input
-                            onChange={(e) => setlname(e.target.value)}
+                            onChange={(e) => setCname(e.target.value)}
                             className='w-full text-lg  py-2 px-3 outline-none'
                             type='text'
-                            placeholder='Last Name'
+                            placeholder='Company Name'
                         />
                         <input
+                            onChange={(e) => setOccupation(e.target.value)}
+                            className='w-full text-lg  py-2 px-3 outline-none'
+                            type='text'
+                            placeholder='Your Occupation'
+                        />
+                        
+                        <input
+                            onChange={(e) => setDate(e.target.value)}
+                            className='w-full text-lg  py-2 px-3 outline-none'
+                            type='date'
+                            min="1997-01-01" max="2030-12-31"
+                            placeholder='DD-MM-YYYY'
+                        />
+                         <input
                             onChange={(e) => setphone(e.target.value)}
                             className='w-full text-lg  py-2 px-3 outline-none'
-                            type='text'
-                            placeholder='Phone No'
+                            type='tel'
+                            placeholder='Phone Number'
                         />
+                    
                         <input
                             onChange={(e) => setemail(e.target.value)}
                             className='w-full text-lg  py-2 px-3 outline-none'
                             type='email'
                             placeholder='Email'
                         />
-                        <input
-                            onChange={(e) => setpassword(e.target.value)}
-                            className='w-full text-lg  py-2 px-3 outline-none'
-                            type='password'
-                            placeholder='Password'
-                        />
+                        
                         <button className='w-full h-10 py-2 rounded-md bg-[#ce9847] disabled:bg-slate-500 text-white'>Sign In</button>
                     </form>
                     <div>

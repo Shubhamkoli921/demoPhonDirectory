@@ -22,7 +22,7 @@ const CardComponent = () => {
             <div className='flex flex-col items-center justify-center w-full h-full '>
               {/* <div className='absolute w-[200px] h-[200px] bg-gradient-to-tl from-black '></div> */}
               <h1 className='m-2 font-bold'>Member</h1>
-              <div className='flex-col p-2 text-[12px] w-[200px] lg:text-[15px] lg:w-[300px]'>
+              <div className='flex-col p-2 text-[13px] w-[260px] lg:text-[15px] lg:w-[300px]'>
                 <p className='flex flex-row items-center'><BsFillPersonFill className="mx-2" />shubham Koli</p>
                 <p className='flex flex-row items-center'><CgOrganisation className="mx-2" /> company Name</p>
                 <p className='flex flex-row items-center'><BiSolidNetworkChart className="mx-2" />  Occupation</p>

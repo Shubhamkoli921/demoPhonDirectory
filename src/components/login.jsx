@@ -4,13 +4,14 @@ import { Link, useNavigate } from 'react-router-dom'
 
 const Login = () => {
 
+    const [fname, setfname] = useState('')
     const [email, setemail] = useState('')
-    const [password, setpassword] = useState('')
+    const [phone, setphone] = useState('')
     const navigate = useNavigate()
 
     const handlesubmit = (e) => {
         e.preventDefault()
-        console.log(email, password)
+        console.log(fname,phone,email)
     }
     return (
         // <div>Login</div>
@@ -20,17 +21,24 @@ const Login = () => {
 
                 <form onSubmit={handlesubmit} className="flex flex-col gap-4 pt-4">
                     <input
+                        onChange={(e) => setfname(e.target.value)}
+                        className='w-full text-lg  py-2 px-3 outline-none'
+                        type='text'
+                        placeholder='Enter Your Full Name'
+                    />
+                    <input
+                        onChange={(e) => setphone(e.target.value)}
+                        className='w-full text-lg  py-2 px-3 outline-none'
+                        type='tel'
+                        placeholder='Phone Number'
+                    />
+                    <input
                         onChange={(e) => setemail(e.target.value)}
                         className='w-full text-lg  py-2 px-3 outline-none'
                         type='email'
                         placeholder='Email'
                     />
-                    <input
-                        onChange={(e) => setpassword(e.target.value)}
-                        className='w-full text-lg  py-2 px-3 outline-none'
-                        type='password'
-                        placeholder='Password'
-                    />
+
 
                     <button className='w-full h-10 py-2 rounded-md bg-[#ce9847] disabled:bg-slate-500 text-white'>Log In</button>
                 </form>
