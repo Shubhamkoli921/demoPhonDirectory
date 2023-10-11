@@ -19,7 +19,7 @@ const Login = () => {
         // <div>Login</div>
         <>
             <Rotary />
-            <div className="min-h-screen w-full flex items-center justify-center p-2" >
+            <div className="min-h-screen w-full flex mt-6 p-2" >
                 <div className="relative w-full sm:max-w-md md:max-w-lg flex flex-col gap-3 p-3 py-5 rounded-md divide-y">
                     <h2 className='flex items-center justify-between m-2 text-black'> <MdKeyboardBackspace className='text-black cursor-pointer' size={30} onClick={() => navigate('/')} /> Log In</h2>
 
