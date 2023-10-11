@@ -16,6 +16,7 @@ const DrawerBanner = () => {
             <Rotary />
             <h1 className='text-4xl mx-auto flex font-bold max-w-[1640px]  items-center p-2 ml-5 text-blue-950'>
                 {/* {rotary.data.subMenu.title} */}
+                RI District Governor Anil Parmar's Message
             </h1>
             <div className='max-w-[1640px] mx-auto p-4 items-center w-full h-full '>
                 {/* {card} */}

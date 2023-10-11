@@ -54,7 +54,7 @@ const Navbar = () => {
                 <Link className=' text-black bg-transparent hidden md:flex items-center p-2 m-2  rounded hover:text-white hover:bg-black cursor-pointer duration-500' to={"/login"} >
                     Login
                 </Link>
-                <Link className=' text-black bg-transparent hidden md:flex items-center p-2 m-2  rounded hover:text-white hover:bg-black cursor-pointer duration-500' to={'/signin'} > Sign In </Link>
+                <Link className=' text-black bg-transparent hidden md:flex items-center p-2 m-2  rounded hover:text-white hover:bg-black cursor-pointer duration-500' to={'/signup'} > Sign Up </Link>
 
 
             </div>

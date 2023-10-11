@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import {MdKeyboardBackspace} from 'react-icons/md'
+import Rotary from './rotary'
 const Signup = () => {
 
     const [fname, setfname] = useState('')
@@ -19,6 +20,7 @@ const Signup = () => {
 
     return (
         <>
+            <Rotary/>
             <div className="min-h-screen w-full flex items-center justify-center p-2" >
                 <div className="relative w-full sm:max-w-md md:max-w-lg flex flex-col gap-3 p-3 py-5 bg-slate-50 rounded-md divide-y">
                 <h2 className='flex items-center justify-between m-2'> <MdKeyboardBackspace size={30} onClick={()=> navigate('/') } /> Sign Up</h2>

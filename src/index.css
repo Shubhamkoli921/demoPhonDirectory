@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+/* body{
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKFP6xySrvDX63TU3lZ0-MAMRnfpkWyF3ppg&usqp=CAU');
-  /* background-position: center; */
+  background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
   position:relative;
-}
+} */
