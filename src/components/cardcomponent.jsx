@@ -7,6 +7,7 @@ import { LiaBirthdayCakeSolid } from 'react-icons/lia'
 import { AiFillPhone, AiOutlineMail } from 'react-icons/ai'
 
 
+
 const CardComponent = () => {
   return (
     <>
@@ -23,12 +24,12 @@ const CardComponent = () => {
               {/* <div className='absolute w-[200px] h-[200px] bg-gradient-to-tl from-black '></div> */}
               <h1 className='m-2 font-bold'>Member</h1>
               <div className='flex-col p-2 text-[13px] w-[260px] lg:text-[15px] lg:w-[300px]'>
-                <p className='flex flex-row items-center'><BsFillPersonFill className="mx-2" />shubham Koli</p>
-                <p className='flex flex-row items-center'><CgOrganisation className="mx-2" /> company Name</p>
-                <p className='flex flex-row items-center'><BiSolidNetworkChart className="mx-2" />  Occupation</p>
-                <p className='flex flex-row items-center'><LiaBirthdayCakeSolid className="mx-2" /> 14/05/2000</p>
-                <p className='flex flex-row items-center'><AiFillPhone className="mx-2" /> 9890845263</p>
-                <p className='flex flex-row items-center'><AiOutlineMail className="mx-2" /> shubhamkk922@gmail.com</p>
+                <p className='flex flex-row items-center'><BsFillPersonFill className="mx-2" />Dr.Mukund Abhyankar</p>
+                <p className='flex flex-row items-center'><CgOrganisation className="mx-2" />RC Pune Shivaji Nagar</p>
+                <p className='flex flex-row items-center'><BiSolidNetworkChart className="mx-2" />  Journalism</p>
+                <p className='flex flex-row items-center'><LiaBirthdayCakeSolid className="mx-2" /> 19/05/2000</p>
+                <p className='flex flex-row items-center'><AiFillPhone className="mx-2" /> 9011070020</p>
+                <p className='flex flex-row items-center'><AiOutlineMail className="mx-2" /> mukund_abhyankar@yahoo.com</p>
               </div>
             </div>
           </div>

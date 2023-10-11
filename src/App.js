@@ -11,6 +11,7 @@ import Banner from './components/banner';
 import Club from './components/club';
 import Events from './components/events';
 import Committee from './components/committee';
+import OtpAuth from './components/otpAuth';
 // import Test from './components/test';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path='/club' element={<Club/>} />
         <Route path='/events' element={<Events/>} />
         <Route path='/committee' element={<Committee />} />
+        <Route path='/otpAuth' element={<OtpAuth/>}/>
         
       </Routes>
     </BrowserRouter>
